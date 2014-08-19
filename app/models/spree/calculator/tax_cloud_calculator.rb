@@ -18,7 +18,6 @@ module Spree
         raise 'TaxCloud cannot calculate inclusive sales taxes.'
       else
         round_to_two_places(tax_for_item(item))
-        # TODO take discounted_amount into account. This is a problem because TaxCloud API does not take discounts nor does it return percentage rates.
       end
     end
 
